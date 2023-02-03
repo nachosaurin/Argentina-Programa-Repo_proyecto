@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background-color: #add8f6;
+    background-color: #add8e6;
     color: #add8e6;
     display: flex;
     display: table;
@@ -19,8 +19,9 @@
 }
 
 .navbar button {
+    font-family: 'Inconsolata';
     font-size: 15px ;
-    background-color: #add8f6;
+    background-color: #add8e6;
     align-self: right;
     padding: 2em;
 }
@@ -34,8 +35,6 @@
     flex-direction: column;
     align-self: end;
 }
-
-
 
 .imagen-encabezado img {
     height: 55vh;

@@ -1,0 +1,32 @@
+.contenedor-sobre-mi {
+    background-color:blu;
+    height: 100vh;
+    width: 100%;
+}
+
+.iconos-sobre-mi span {
+    display: flex;
+    justify-content: flex-end;
+}   
+
+.iconos-sobre-mi {
+    flex-direction: row;
+}
+
+.titulo-pagina-sobre-mi  {
+    text-align: center;
+    color: white;
+    
+   
+}
+
+.contenedor-articulo{
+    color: white;
+    font-size: 30px;
+    margin: 1em 3em 2em 3em;
+    font-family:'Inconsolata', monospace ;
+}
+
+.lista-habilidades {
+    font-family: 'DotGothic16', sans-serif;
+}
