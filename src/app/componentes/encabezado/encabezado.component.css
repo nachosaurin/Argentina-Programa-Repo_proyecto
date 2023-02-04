@@ -1,31 +1,41 @@
 .contenedor-encabezado {
-    background-color: lightblue;
+    background-color: #051923;
     width: 100%;
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
 .navbar {
-    background-color: #add8e6;
-    color: #add8e6;
+    background-color: #051923;
+    color: #051923;
     display: flex;
-    display: table;
-    text-align: right;
+    justify-content: center;
     flex-direction: row;
+    align-self: center;
+    /* display: table; */
+    /* text-align: left; */
+    /* flex-direction: row; */
     width: 100%;
+    position: sticky;
 }
 
 .links-partes {
+    
     font-family: 'Inconsolata';
-    font-size: 20px ;
-    align-self: center;
-    padding: 2em;
+    font-size: 22px ;
+    padding: 1em;
     text-decoration: none;
-    color: black;
+    color: #dddf00;
+}
+
+.links-partes:hover {
+    color: white;
 }
 .imagen-encabezado {
     display: flex;
     align-self: center;
+    flex-direction: column;
 }
 
 .iconos-derecha {
@@ -35,21 +45,51 @@
 }
 
 .imagen-encabezado img {
+    align-self: center;
     height: 55vh;
-    width: 50vh;
-    padding-left: 1em;
-    border-radius: 11%;
+    width: 55vh;
+    margin-top: 5rem;
+    border-radius: 100%;
 }
 
 .texto-descrip--encabezado {
    display: flex;
+   align-items: center;
+   flex-direction: column;
     
 }
 .nombreoc-encabezado { 
+    
     font-family: 'Inconsolata', monospace;
     font-size: 2.5em;
     padding: 2em;
-    align-self:center;   
+}
+
+.texto-animado {
+    display: block;
+    white-space: nowrap;
+    color: white;
+    border-right: 4px solid white;
+    width: 41ch;
+    animation: escribiendo 2s steps(34),
+               parpadeo 0.5s infinite alternate ;
+    overflow: hidden; 
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@keyframes escribiendo {
+    from {
+        width: 0; 
+    }
+    
+}
+
+@keyframes parpadeo {
+    70% {
+        border-color: transparent;
+    }
 }
 
 @media  screen and (max-width: 768px) {
